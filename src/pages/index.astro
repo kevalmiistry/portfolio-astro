@@ -1,5 +1,35 @@
 ---
 import Layout from "../layouts/Layout.astro"
+const wasteAidTechStack = [
+    {
+        src: "./logos/next.png",
+        alt: "Nextjs",
+    },
+    {
+        src: "./logos/tw.png",
+        alt: "Tailwind CSS",
+    },
+    {
+        src: "./logos/trpc.png",
+        alt: "tRPC",
+    },
+    {
+        src: "./logos/next-auth.png",
+        alt: "Next-Auth",
+    },
+    {
+        src: "./logos/prisma.png",
+        alt: "Prisma",
+    },
+    {
+        src: "./logos/mysql.png",
+        alt: "MySQL",
+    },
+    {
+        src: "./logos/ts.png",
+        alt: "TypeScript",
+    },
+]
 ---
 
 <Layout title="Keval Mistry">
@@ -20,16 +50,16 @@ import Layout from "../layouts/Layout.astro"
 
         <div class="mt-40">
             <p class="text-2xl font-medium">Work Experience</p>
-            <div class="w-full border-t mb-10"></div>
+            <div class="w-full border-t mb-6 border-gray-500"></div>
 
             <div class="pl-2">
                 <p
                     class="text-3xl font-medium flex items-center gap-2 flex-wrap"
                 >
-                    CultureX Entertaiment Pvt. Lmt.
+                    1. CultureX Entertaiment Pvt. Lmt.
                 </p>
                 <p class="font-light italic text-gray-200 text-sm">
-                    30-Jan-23 to 31-Jul-24 · Internship | 01-Aug-23 to Present ·
+                    30-Jan-23 to 31-Jul-23 · Internship | 01-Aug-23 to Present ·
                     Full-Time
                 </p>
                 <span
@@ -38,51 +68,51 @@ import Layout from "../layouts/Layout.astro"
                 >
 
                 <div
-                    class="list-disc border-l-2 border-[#4d4d4d] ml-2 mt-4 text-gray-200"
+                    class="pl-[1px] mt-4 ml-2 bg-gradient-to-b from-[#4d4d4d] from-75% to-transparent to-100%"
                 >
-                    <p class="relative pl-3 mb-2">
-                        <span
-                            class="absolute w-[8px] -left-[5px] h-[8px] rounded-full top-2 bg-[#4d4d4d]"
-                        ></span>
-                        I had joined CulturX as frontend intern when my job was to
-                        transform Figma designs into production ready UI with Reactjs
-                    </p>
-                    <p class="relative pl-3 mb-2">
-                        <span
-                            class="absolute w-[8px] -left-[5px] h-[8px] rounded-full top-2 bg-[#4d4d4d]"
-                        ></span>
-                        As time went i took many responsibilies and have done some
-                        prominent things:
-                    </p>
-                    <p class="relative pl-3 mb-2">
-                        <span
-                            class="absolute w-[8px] -left-[5px] h-[8px] rounded-full top-2 bg-[#4d4d4d]"
-                        ></span>
-                        I migrated company's two CRA (create-react-app) projects
-                        to vite and increased development build speed by 10-100x
-                        and production build speed by 2x
-                    </p>
-                    <p class="relative pl-3 mb-2">
-                        <span
-                            class="absolute w-[8px] -left-[5px] h-[8px] rounded-full top-2 bg-[#4d4d4d]"
-                        ></span>
-                        I migrated project from bootstrap to Tailwind which allowed
-                        us to develop UI at much faster pace & also allowed us to
-                        use tailwind dependent UI solutions like Shad-cn
-                    </p>
-                    <p class="relative pl-3 mb-2">
-                        <span
-                            class="absolute w-[8px] -left-[5px] h-[8px] rounded-full top-2 bg-[#4d4d4d]"
-                        ></span>
-                        I created a micro-service to generate PDF file by leveraging
-                        packages like puppetear & React which looks like this & this
-                    </p>
+                    <div class="list-disc bg-[#111] text-gray-200">
+                        <p class="relative pl-3 mb-2">
+                            <span
+                                class="absolute w-[7px] -left-[4px] h-[7px] rounded-full top-2 bg-[#4d4d4d]"
+                            ></span>
+                            I had joined CulturX as frontend intern where my job
+                            was to transform Figma designs into production ready
+                            UI with Reactjs
+                        </p>
+                        <p class="relative pl-3 mb-2">
+                            <span
+                                class="absolute w-[7px] -left-[4px] h-[7px] rounded-full top-2 bg-[#4d4d4d]"
+                            ></span>
+                            As time went i took many responsibilies and have done
+                            some prominent things:
+                        </p>
+                        <p class="relative pl-3 mb-2">
+                            <span
+                                class="absolute w-[7px] -left-[4px] h-[7px] rounded-full top-2 bg-[#4d4d4d]"
+                            ></span>
+                            I migrated company's two CRA (create-react-app) projects
+                            to vite and increased development build speed by 10-100x
+                            and production build speed by 2x
+                        </p>
+                        <p class="relative pl-3 mb-2">
+                            <span
+                                class="absolute w-[7px] -left-[4px] h-[7px] rounded-full top-2 bg-[#4d4d4d]"
+                            ></span>
+                            I migrated project from bootstrap to Tailwind which allowed
+                            us to develop UI at much faster pace & also allowed us
+                            to use tailwind dependent UI solutions like Shad-cn
+                        </p>
+                        <p class="relative pl-3 mb-2">
+                            <span
+                                class="absolute w-[7px] -left-[4px] h-[7px] rounded-full top-2 bg-[#4d4d4d]"
+                            ></span>
+                            I created a micro-service to generate PDF file by leveraging
+                            packages like puppetear & React which looks like this
+                            & this
+                        </p>
+                    </div>
                 </div>
             </div>
-            <!-- <div class="border rounded-md p-4 mt-4 bg-[rgba(255,255,255,0.1)]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
-                consectetur!
-            </div> -->
         </div>
 
         <div class="mt-40">
@@ -93,101 +123,32 @@ import Layout from "../layouts/Layout.astro"
                 class="border-2 rounded-lg border-[#4d4d4d] bg-[#4d4d4d20] py-2 px-3"
             >
                 <div class="flex items-center justify-between">
-                    <p class="text-xl font-medium">Waste-Aid</p>
-
+                    <p class="text-xl font-medium flex-1">Waste-Aid</p>
                     <div
-                        class="flex items-center [&_img]:-ml-3 [&_img]:grayscale"
+                        class="flex h-[35px] w-full flex-1 items-center justify-end"
                     >
-                        <img
-                            src="./logos/next.png"
-                            alt="nextjs"
-                            class="w-[34px] h-[34px] object-contain hover:z-10 transition-all hover:grayscale-0"
-                        />
-                        <img
-                            src="./logos/tw.png"
-                            alt="tailwind"
-                            class="w-[34px] h-[34px] object-contain hover:z-10 transition-all hover:grayscale-0"
-                        />
-                        <img
-                            src="./logos/trpc.png"
-                            alt="trpc"
-                            class="w-[34px] h-[34px] object-contain hover:z-10 transition-all hover:grayscale-0"
-                        />
-                        <img
-                            src="./logos/next-auth.png"
-                            alt="next-auth"
-                            class="w-[34px] h-[34px] object-contain hover:z-10 transition-all hover:grayscale-0"
-                        />
-                        <img
-                            src="./logos/prisma.png"
-                            alt="prisma"
-                            class="w-[34px] h-[34px] object-contain hover:z-10 transition-all hover:grayscale-0"
-                        />
-                        <img
-                            src="./logos/mysql.png"
-                            alt="mysql"
-                            class="w-[34px] h-[34px] object-contain hover:z-10 transition-all hover:grayscale-0"
-                        />
-                        <img
-                            src="./logos/ts.png"
-                            alt="typescipt"
-                            class="w-[34px] h-[34px] object-contain hover:z-10 transition-all hover:grayscale-0"
-                        />
+                        {
+                            wasteAidTechStack.map((item, idx) => (
+                                <div
+                                    class={`group relative z-[${10 - idx}] -ml-3 h-[34px] w-[34px] rounded-full border-2 transition-all hover:z-20 hover:-translate-y-1 hover:scale-110`}
+                                >
+                                    <img
+                                        src={item.src}
+                                        alt={item.alt}
+                                        class={`object-contain grayscale hover:grayscale-0`}
+                                    />
+                                    <span class="absolute left-1/2 top-0 w-max -translate-x-1/2 rounded bg-gray-600 p-0 px-1.5 text-xs opacity-0 transition-all group-hover:-top-full group-hover:opacity-100">
+                                        {item.alt}
+                                    </span>
+                                </div>
+                            ))
+                        }
                     </div>
                 </div>
                 <span class="text-gray-200 text-sm">
                     Waste-Aid is open marketplace for recycler and waste
                     donators
                 </span>
-            </div>
-
-            <div
-                class="border-2 rounded-lg border-[#4d4d4d] mt-5 bg-[#4d4d4d20] py-2 px-3"
-            >
-                <div class="flex items-center justify-between">
-                    <p class="text-xl font-medium">TalkShawk</p>
-
-                    <div
-                        class="flex items-center [&_img]:-ml-3 [&_img]:grayscale"
-                    >
-                        <img
-                            src="./logos/react.png"
-                            alt="reactjs"
-                            class="w-[34px] h-[34px] object-contain hover:z-10 transition-all hover:grayscale-0"
-                        />
-                        <img
-                            src="./logos/sass.png"
-                            alt="sass"
-                            class="w-[34px] h-[34px] object-contain hover:z-10 transition-all hover:grayscale-0"
-                        />
-                        <img
-                            src="./logos/trpc.png"
-                            alt="trpc"
-                            class="w-[34px] h-[34px] object-contain hover:z-10 transition-all hover:grayscale-0"
-                        />
-                        <img
-                            src="./logos/next-auth.png"
-                            alt="next-auth"
-                            class="w-[34px] h-[34px] object-contain hover:z-10 transition-all hover:grayscale-0"
-                        />
-                        <img
-                            src="./logos/prisma.png"
-                            alt="prisma"
-                            class="w-[34px] h-[34px] object-contain hover:z-10 transition-all hover:grayscale-0"
-                        />
-                        <img
-                            src="./logos/mysql.png"
-                            alt="mysql"
-                            class="w-[34px] h-[34px] object-contain hover:z-10 transition-all hover:grayscale-0"
-                        />
-                        <img
-                            src="./logos/ts.png"
-                            alt="typescipt"
-                            class="w-[34px] h-[34px] object-contain hover:z-10 transition-all hover:grayscale-0"
-                        />
-                    </div>
-                </div>
-                <span class="text-gray-200 text-sm"> TalkShawk is a </span>
             </div>
         </div>
     </main>
