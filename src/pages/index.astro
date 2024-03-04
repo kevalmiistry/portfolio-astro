@@ -5,6 +5,20 @@ import GitHubLogo from "../components/GitHubLogo.astro"
 import LinkIcon from "../components/LinkIcon.astro"
 import ProjectDescription from "../components/ProjectDescription.tsx"
 
+const zs = [
+    "z-[0]",
+    "z-[1]",
+    "z-[2]",
+    "z-[3]",
+    "z-[4]",
+    "z-[5]",
+    "z-[6]",
+    "z-[7]",
+    "z-[8]",
+    "z-[9]",
+    "z-[10]",
+]
+
 const wasteAidTechStack = [
     {
         src: "./logos/next.png",
@@ -36,8 +50,46 @@ const wasteAidTechStack = [
     },
 ]
 
-const description =
+const wasteAidDescription =
     "WasteRecycleConnect is a community-driven platform fostering environmental sustainability. Users can create posts showcasing recyclable waste, facilitating connections with others eager to recycle. Donors generate a donation token with a QR code, signaling their commitment to cover shipping costs. The sender attaches this QR code to the parcel, and upon arrival, aid-men (post creators) scan it, notifying donors that their contribution has reached the right place. It's a seamless, transparent, and collaborative effort for a greener future, where users connect, recycle, and make a positive impact on the environment. No direct monetary transactions are involved; it's all about people coming together to create a sustainable world."
+
+const talkshawkTechStack = [
+    {
+        src: "./logos/react.png",
+        alt: "Reactjs",
+    },
+    {
+        src: "./logos/sass.png",
+        alt: "Sass",
+    },
+    {
+        src: "./logos/node.png",
+        alt: "Nodejs",
+    },
+    {
+        src: "./logos/express-js.png",
+        alt: "Expressjs",
+    },
+    {
+        src: "./logos/mongo.png",
+        alt: "MongoDB",
+    },
+    {
+        src: "./logos/socket-io.png",
+        alt: "Socket.io",
+    },
+    {
+        src: "./logos/firebase.png",
+        alt: "Firebase",
+    },
+    {
+        src: "./logos/ts.png",
+        alt: "TypeScript",
+    },
+]
+
+const talkshawkDescription =
+    "A feature-rich chat application built on the MERN (MongoDB, Express.js, React, Node.js) stack with real-time communication powered by Socket.io. Users can sign up, initiate one-on-one chats by searching for others, and create groups for collaborative discussions. The application features a sleek dark theme and provides typing acknowledgments for a seamless chatting experience."
 ---
 
 <Layout title="Keval Mistry">
@@ -155,13 +207,67 @@ const description =
                     </div>
                 </div>
 
-                <ProjectDescription description={description} client:load />
+                <ProjectDescription
+                    description={wasteAidDescription}
+                    client:load
+                />
 
                 <div class="overflow-x-auto flex items-center gap-2 mt-4">
                     <a
                         href="https://github.com/kevalmiistry/waste-aid"
                         target="_blank"
                         rel="noopener noreferrer"
+                    >
+                        <GitHubLogo />
+                    </a>
+                </div>
+            </div>
+
+            <div
+                class="border-2 rounded-xl border-[#4d4d4d] bg-[#4d4d4d20] py-2 pb-4 px-3 mt-4"
+            >
+                <div class="flex items-end justify-between">
+                    <h6 class="text-2xl hover:underline font-medium flex-1">
+                        <a
+                            href="https://waste-aid.kevalmiistry.me/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="flex items-center gap-2"
+                        >
+                            TalkShawk
+                            <LinkIcon />
+                        </a>
+                    </h6>
+                    <div
+                        class="flex h-[35px] w-full flex-1 items-center justify-end"
+                    >
+                        {
+                            talkshawkTechStack.map((item, idx) => (
+                                <TechStackGroup idx={idx} item={item} />
+                            ))
+                        }
+                    </div>
+                </div>
+
+                <ProjectDescription
+                    description={talkshawkDescription}
+                    client:load
+                />
+
+                <div class="overflow-x-auto flex items-center gap-2 mt-4">
+                    <a
+                        href="https://github.com/kevalmiistry/TalkShawk_frontend"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="Frontend Repository"
+                    >
+                        <GitHubLogo />
+                    </a>
+                    <a
+                        href="https://github.com/kevalmiistry/talkshawk_backend"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="Backend Repository"
                     >
                         <GitHubLogo />
                     </a>
