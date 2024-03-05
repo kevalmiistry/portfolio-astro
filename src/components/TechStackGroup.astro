@@ -13,11 +13,7 @@ const { idx, item } = Astro.props
 <div
     class={`group relative z-[${10 - idx}] -ml-3 h-[34px] w-[34px] rounded-full border-2 transition-all hover:z-20 hover:-translate-y-1 hover:scale-110`}
 >
-    <img
-        src={item.src}
-        alt={item.alt}
-        class={`object-contain grayscale hover:grayscale-0`}
-    />
+    <img src={item.src} alt={item.alt} class="object-contain" />
     <span
         class="absolute left-1/2 top-0 w-max -translate-x-1/2 rounded bg-gray-600 p-0 px-1.5 text-xs opacity-0 transition-all group-hover:-top-full group-hover:opacity-100"
     >
