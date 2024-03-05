@@ -21,8 +21,98 @@ const { title } = Astro.props
     </body>
 </html>
 <style is:global>
+    @font-face {
+        font-family: "Geist-Sans";
+        src:
+            url("/fonts/Geist-Black.woff2") format("woff2"),
+            url("/fonts/Geist-Black.otf") format("opentype");
+        font-weight: 900;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "Geist-Sans";
+        src:
+            url("/fonts/Geist-Bold.woff2") format("woff2"),
+            url("/fonts/Geist-Bold.otf") format("opentype");
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "Geist-Sans";
+        src:
+            url("/fonts/Geist-Light.woff2") format("woff2"),
+            url("/fonts/Geist-Light.otf") format("opentype");
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "Geist-Sans";
+        src:
+            url("/fonts/Geist-Medium.woff2") format("woff2"),
+            url("/fonts/Geist-Medium.otf") format("opentype");
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "Geist-Sans";
+        src:
+            url("/fonts/Geist-Regular.woff2") format("woff2"),
+            url("/fonts/Geist-Regular.otf") format("opentype");
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "Geist-Sans";
+        src:
+            url("/fonts/Geist-SemiBold.woff2") format("woff2"),
+            url("/fonts/Geist-SemiBold.otf") format("opentype");
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "Geist-Sans";
+        src:
+            url("/fonts/Geist-Thin.woff2") format("woff2"),
+            url("/fonts/Geist-Thin.otf") format("opentype");
+        font-weight: 100;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "Geist-Sans";
+        src:
+            url("/fonts/Geist-UltraBlack.woff2") format("woff2"),
+            url("/fonts/Geist-UltraBlack.otf") format("opentype");
+        font-weight: 950;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "Geist-Sans";
+        src:
+            url("/fonts/Geist-UltraLight.woff2") format("woff2"),
+            url("/fonts/Geist-UltraLight.otf") format("opentype");
+        font-weight: 200;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "Geist-Sans";
+        src:
+            url("/fonts/GeistVariableVF.woff2") format("woff2"),
+            url("/fonts/GeistVariableVF.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+    }
+
     html {
-        font-family: system-ui, sans-serif;
+        font-family: "Geist-Sans", sans-serif; /* You can set a default font */
         background: #111;
         color: #fff;
     }
