@@ -4,6 +4,7 @@ import TechStackGroup from "../components/TechStackGroup.astro"
 import GitHubLogo from "../components/GitHubLogo.astro"
 import LinkIcon from "../components/LinkIcon.astro"
 import ProjectDescription from "../components/ProjectDescription.tsx"
+import LinkItem from "../components/LinkItem.astro"
 
 import {
     wasteAidTechStack,
@@ -59,8 +60,17 @@ import {
                                 class="absolute w-[7px] -left-[4px] h-[7px] rounded-full top-2 bg-[#4d4d4d]"
                             ></span>
                             I had joined CulturX as frontend intern where my job
-                            was to transform Figma designs into production ready
-                            UI with Reactjs
+                            was to transform <LinkItem
+                                link="https://www.figma.com/"
+                                img="figma.png"
+                                text="Figma"
+                            />
+                            designs into production ready UI with
+                            <LinkItem
+                                link="https://react.dev/"
+                                img="react.png"
+                                text="Reactjs"
+                            />
                         </p>
                         <p class="relative pl-3 mb-2">
                             <span
@@ -73,25 +83,65 @@ import {
                             <span
                                 class="absolute w-[7px] -left-[4px] h-[7px] rounded-full top-2 bg-[#4d4d4d]"
                             ></span>
-                            I migrated company's two CRA (create-react-app) projects
-                            to vite and increased development build speed by 10-100x
-                            and production build speed by 2x
+                            I migrated company's two <LinkItem
+                                link="https://legacy.reactjs.org/docs/create-a-new-react-app.html"
+                                img="react.png"
+                                text="CRA"
+                            /> (create-react-app) projects to <LinkItem
+                                link="https://vitejs.dev/"
+                                img="vite.png"
+                                text="Vite"
+                            /> and increased development build speed by 10-100x and
+                            production build speed by 2x
                         </p>
                         <p class="relative pl-3 mb-2">
                             <span
                                 class="absolute w-[7px] -left-[4px] h-[7px] rounded-full top-2 bg-[#4d4d4d]"
                             ></span>
-                            I migrated project from bootstrap to Tailwind which allowed
-                            us to develop UI at much faster pace & also allowed us
-                            to use tailwind dependent UI solutions like Shad-cn
+                            I migrated project from <LinkItem
+                                link="https://getbootstrap.com/"
+                                img="bootstrap.png"
+                                text="Bootstrap"
+                            /> to <LinkItem
+                                link="https://tailwindcss.com/"
+                                img="tw.png"
+                                text="Tailwind"
+                            /> which allowed us to develop UI at much faster pace
+                            & also allowed us to use tailwind dependent UI solutions
+                            like <LinkItem
+                                link="https://ui.shadcn.com/"
+                                img="shad-cn.png"
+                                text="Shad-cn"
+                            />
                         </p>
                         <p class="relative pl-3 mb-2">
                             <span
                                 class="absolute w-[7px] -left-[4px] h-[7px] rounded-full top-2 bg-[#4d4d4d]"
                             ></span>
                             I created a micro-service to generate PDF file by leveraging
-                            packages like puppetear & React which looks like this
-                            & this
+                            packages like <LinkItem
+                                link="https://pptr.dev/"
+                                img="puppeteer.png"
+                                text="Puppeteer"
+                            /> & <LinkItem
+                                link="https://react.dev/"
+                                img="react.png"
+                                text="Reactjs"
+                            /> which looks like
+                            <a
+                                href="./pdf/ig-mrbeast.pdf"
+                                download="ig-mrbeast.pdf"
+                                target="_blank"
+                                class="underline"
+                                rel="noopener noreferrer">this</a
+                            > &
+                            <a
+                                href="./pdf/yt-mrbeast.pdf"
+                                download="yt-mrbeast.pdf"
+                                target="_blank"
+                                class="underline"
+                                rel="noopener noreferrer">this</a
+                            >
                         </p>
                     </div>
                 </div>
