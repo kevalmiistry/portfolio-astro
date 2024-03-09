@@ -12,8 +12,8 @@ const { img, link, text } = Astro.props
     href={link}
     target="_blank"
     rel="noopener noreferrer"
-    class="inline-flex bg-[#222] items-center gap-1 w-fit border rounded px-1 border-gray-700"
+    class="inline-flex bg-[#222] items-center text-sm gap-1 w-fit border rounded px-1 border-gray-700"
 >
-    <img src={`./logos/${img}`} alt={text} class="w-4 h-4" />
+    <img src={`./logos/${img}`} alt={text} class="w-[14px] h-[14px]" />
     {text}
 </a>

@@ -19,7 +19,7 @@ const wasteAidTechStack = [
     },
     {
         src: "./logos/tw.png",
-        alt: "Tailwind CSS",
+        alt: "Tailwind",
     },
     {
         src: "./logos/trpc.png",
@@ -44,7 +44,7 @@ const wasteAidTechStack = [
 ]
 
 const wasteAidDescription =
-    "WasteRecycleConnect is a community-driven platform fostering environmental sustainability. Users can create posts showcasing recyclable waste, facilitating connections with others eager to recycle. Donors generate a donation token with a QR code, signaling their commitment to cover shipping costs. The sender attaches this QR code to the parcel, and upon arrival, aid-men (post creators) scan it, notifying donors that their contribution has reached the right place. It's a seamless, transparent, and collaborative effort for a greener future, where users connect, recycle, and make a positive impact on the environment. No direct monetary transactions are involved; it's all about people coming together to create a sustainable world."
+    "WasteAid: A platform where people share recyclable waste to those who recycles them. Generating donation token with QR code to get acknowledgement when receiver  gets the parcel & scans the QR code. In the process no money is involved, just folks connecting to make the world greener!\n\nI have made this project using the T3 stack, incorporating Next.js with Tailwind for the front end, tRPC for the back end, MySQL for the database, Prisma ORM for communication with the database, and Next-Auth for authentication. Additionally I have used UploadThing for image storing, react-email for emailing and list goes on"
 
 const talkshawkTechStack = [
     {

@@ -15,7 +15,7 @@ const { idx, item } = Astro.props
 >
     <img src={item.src} alt={item.alt} class="object-contain" />
     <span
-        class="absolute left-1/2 top-0 w-max -translate-x-1/2 rounded bg-gray-600 p-0 px-1.5 text-xs opacity-0 transition-all group-hover:-top-full group-hover:opacity-100"
+        class="border border-gray-400 absolute left-1/2 top-0 w-max -translate-x-1/2 rounded bg-gray-600 p-0 px-1.5 text-xs opacity-0 transition-all group-hover:-top-full group-hover:opacity-100"
     >
         {item.alt}
     </span>

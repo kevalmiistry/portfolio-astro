@@ -4,7 +4,7 @@ const ProjectDescription = ({ description }: { description: String }) => {
     const [expand, setExpand] = useState(false)
 
     return (
-        <p className="mt-4 text-sm text-gray-200 transition-all">
+        <p className="mt-4 whitespace-pre-line text-sm text-gray-200 transition-all">
             {description.length > 50 && !expand ? (
                 <>
                     {description.substring(0, 50) + "..."}
