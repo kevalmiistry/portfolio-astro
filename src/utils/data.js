@@ -84,9 +84,89 @@ const talkshawkTechStack = [
 const talkshawkDescription =
     "A feature-rich chat application built on the MERN (MongoDB, Express.js, React, Node.js) stack with real-time communication powered by Socket.io. Users can sign up, initiate one-on-one chats by searching for others, and create groups for collaborative discussions. The application features a sleek dark theme and provides typing acknowledgments for a seamless chatting experience."
 
+const technologies = [
+    {
+        src: "./logos/html.png",
+        name: "HTML",
+    },
+    {
+        src: "./logos/css.png",
+        name: "CSS",
+    },
+    {
+        src: "./logos/sass.png",
+        name: "SCSS",
+    },
+    {
+        src: "./logos/tw.png",
+        name: "Tailwind",
+    },
+    {
+        src: "./logos/js.png",
+        name: "JavaScript",
+    },
+    {
+        src: "./logos/ts.png",
+        name: "TypeScript",
+    },
+    {
+        src: "./logos/react.png",
+        name: "Reactjs",
+    },
+    {
+        src: "./logos/next.png",
+        name: "Nextjs",
+    },
+    {
+        src: "./logos/astro.png",
+        name: "Astro",
+    },
+    {
+        src: "./logos/vite.png",
+        name: "Vite",
+    },
+    {
+        src: "./logos/node.png",
+        name: "Nodejs",
+    },
+    {
+        src: "./logos/express-js.png",
+        name: "Expressjs",
+    },
+    {
+        src: "./logos/trpc.png",
+        name: "tRPC",
+    },
+    {
+        src: "./logos/firebase.png",
+        name: "Firebase",
+    },
+    {
+        src: "./logos/next-auth.png",
+        name: "NextAuth",
+    },
+    {
+        src: "./logos/socket-io.png",
+        name: "Socket.io",
+    },
+    {
+        src: "./logos/prisma.png",
+        name: "Prisma",
+    },
+    {
+        src: "./logos/mongo.png",
+        name: "MongoDB",
+    },
+    {
+        src: "./logos/mysql.png",
+        name: "MySQL",
+    },
+]
+
 export {
     wasteAidTechStack,
     wasteAidDescription,
     talkshawkTechStack,
     talkshawkDescription,
+    technologies,
 }

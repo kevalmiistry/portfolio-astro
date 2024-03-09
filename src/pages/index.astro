@@ -11,7 +11,9 @@ import {
     wasteAidDescription,
     talkshawkTechStack,
     talkshawkDescription,
+    technologies,
 } from "../utils/data"
+import TechItem from "../components/TechItem.astro"
 ---
 
 <Layout title="Keval Mistry">
@@ -244,6 +246,19 @@ import {
                         <GitHubLogo />
                     </a>
                 </div>
+            </div>
+        </div>
+
+        <div class="mt-40">
+            <p class="text-2xl font-medium">Technologies & Tools I Know</p>
+            <div class="w-full border-t mb-6 border-gray-500"></div>
+
+            <div class="flex items-center gap-4 pb-2 overflow-x-auto">
+                {
+                    technologies.map((item) => (
+                        <TechItem img={item.src} text={item.name} />
+                    ))
+                }
             </div>
         </div>
     </main>
