@@ -112,9 +112,13 @@ const { title } = Astro.props
     }
 
     html {
-        font-family: "Geist-Sans", sans-serif; /* You can set a default font */
+        font-family: "Geist-Sans", sans-serif;
         background: #111;
         color: #fff;
+    }
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: #777;
     }
     ::-webkit-scrollbar {
         width: 8px;
