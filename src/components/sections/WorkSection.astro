@@ -1,5 +1,7 @@
 ---
 import LinkItem from "../LinkItem.astro"
+import BulletPoint from "../BulletPoint.astro"
+import { icons } from "../IconLinkChips/index"
 ---
 
 <section class="mt-40">
@@ -24,33 +26,18 @@ import LinkItem from "../LinkItem.astro"
         >
             <div class="list-disc bg-[#111] text-gray-200 pb-5">
                 <p class="relative pl-3 mb-4">
-                    <span
-                        class="absolute w-[7px] -left-[4px] h-[7px] rounded-full top-2 bg-[#4d4d4d]"
-                    ></span>
+                    <BulletPoint />
                     I had joined CultureX as frontend intern where my job was to
-                    transform <LinkItem
-                        link="https://www.figma.com/"
-                        img="figma.png"
-                        text="Figma"
-                    />
-                    designs into production ready UI with
-                    <LinkItem
-                        link="https://react.dev/"
-                        img="react.png"
-                        text="Reactjs"
-                    />
+                    transform <icons.figma /> designs into production ready UI with
+                    <icons.reactjs />
                 </p>
                 <p class="relative pl-3 mb-4">
-                    <span
-                        class="absolute w-[7px] -left-[4px] h-[7px] rounded-full top-2 bg-[#4d4d4d]"
-                    ></span>
+                    <BulletPoint />
                     After my internship period my role was converted to full-time
                     developer and i took majority of frontend codebase's responsibility.
                 </p>
                 <p class="relative pl-3 mb-4">
-                    <span
-                        class="absolute w-[7px] -left-[4px] h-[7px] rounded-full top-2 bg-[#4d4d4d]"
-                    ></span>
+                    <BulletPoint />
                     I migrated company's two <LinkItem
                         link="https://legacy.reactjs.org/docs/create-a-new-react-app.html"
                         img="react.png"
@@ -63,9 +50,7 @@ import LinkItem from "../LinkItem.astro"
                     build speed by 2x
                 </p>
                 <p class="relative pl-3 mb-4">
-                    <span
-                        class="absolute w-[7px] -left-[4px] h-[7px] rounded-full top-2 bg-[#4d4d4d]"
-                    ></span>
+                    <BulletPoint />
                     I migrated project from <LinkItem
                         link="https://getbootstrap.com/"
                         img="bootstrap.png"
@@ -82,9 +67,7 @@ import LinkItem from "../LinkItem.astro"
                     />
                 </p>
                 <p class="relative pl-3 mb-4">
-                    <span
-                        class="absolute w-[7px] -left-[4px] h-[7px] rounded-full top-2 bg-[#4d4d4d]"
-                    ></span>
+                    <BulletPoint />
                     I created a micro-service to generate PDF file by leveraging
                     packages like <LinkItem
                         link="https://pptr.dev/"
