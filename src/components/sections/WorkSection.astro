@@ -1,7 +1,6 @@
 ---
-import LinkItem from "../LinkItem.astro"
-import BulletPoint from "../BulletPoint.astro"
 import { icons } from "../IconLinkChips/index"
+import BulletPoint from "../BulletPoint.astro"
 ---
 
 <section class="mt-40">
@@ -18,8 +17,9 @@ import { icons } from "../IconLinkChips/index"
         </p>
         <span
             class="bg-[#4d4d4d] mt-1 w-fit px-2 rounded-full pb-0.5 text-base flex items-center justify-center font-normal"
-            >Frontend Developer</span
         >
+            Frontend Developer
+        </span>
 
         <div
             class="pl-[1px] mt-2 ml-2 bg-gradient-to-b from-[#4d4d4d] from-75% to-transparent to-100%"
@@ -38,60 +38,41 @@ import { icons } from "../IconLinkChips/index"
                 </p>
                 <p class="relative pl-3 mb-4">
                     <BulletPoint />
-                    I migrated company's two <LinkItem
-                        link="https://legacy.reactjs.org/docs/create-a-new-react-app.html"
-                        img="react.png"
-                        text="CRA"
-                    /> (create-react-app) projects to <LinkItem
-                        link="https://vitejs.dev/"
-                        img="vite.png"
-                        text="Vite"
-                    /> and increased development build speed by 10-100x and production
-                    build speed by 2x
+                    I migrated company's two <icons.reactjs text="CRA" /> (create-react-app)
+                    projects to <icons.vite /> and increased development build speed
+                    by 10-100x and production build speed by 2x
                 </p>
                 <p class="relative pl-3 mb-4">
                     <BulletPoint />
-                    I migrated project from <LinkItem
-                        link="https://getbootstrap.com/"
-                        img="bootstrap.png"
-                        text="Bootstrap"
-                    /> to <LinkItem
-                        link="https://tailwindcss.com/"
-                        img="tw.png"
-                        text="Tailwind"
+                    I migrated project from <icons.bootstrap /> to <icons.tailwind
                     /> which allowed us to develop UI at much faster pace & also
-                    allowed us to use tailwind dependent UI solutions like <LinkItem
-                        link="https://ui.shadcn.com/"
-                        img="shad-cn.png"
-                        text="Shad-cn"
+                    allowed us to use tailwind dependent UI solutions like <icons.shadcn
                     />
                 </p>
                 <p class="relative pl-3 mb-4">
                     <BulletPoint />
                     I created a micro-service to generate PDF file by leveraging
-                    packages like <LinkItem
-                        link="https://pptr.dev/"
-                        img="puppeteer.png"
-                        text="Puppeteer"
-                    /> & <LinkItem
-                        link="https://react.dev/"
-                        img="react.png"
-                        text="Reactjs"
-                    /> which looks like
+                    packages like <icons.puppeteer /> & <icons.reactjs /> which looks
+                    like
                     <a
                         href="https://drive.google.com/file/d/1vIsIXU9jf7VaDsXMfXFlaiT3G8nr1pP4/view?usp=sharing"
                         download="ig-mrbeast.pdf"
                         target="_blank"
                         class="underline"
-                        rel="noopener noreferrer">this</a
-                    > &
+                        rel="noopener noreferrer"
+                    >
+                        this
+                    </a>
+                    &
                     <a
                         href="https://drive.google.com/file/d/1zXw6FtowhSzOxRHEKmg-Jug8XxxcXvvx/view?usp=sharing"
                         download="yt-mrbeast.pdf"
                         target="_blank"
                         class="underline"
-                        rel="noopener noreferrer">this</a
+                        rel="noopener noreferrer"
                     >
+                        this
+                    </a>
                 </p>
             </div>
         </div>

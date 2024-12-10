@@ -1,5 +1,17 @@
 ---
 import LinkItem from "../LinkItem.astro"
+
+interface Props {
+    link?: string | null
+    img?: string | null
+    text?: string | null
+}
+
+const { img = null, link = null, text = null } = Astro.props
 ---
 
-<LinkItem link="https://react.dev/" img="react.png" text="Reactjs" />
+<LinkItem
+    link={link ?? "https://react.dev/"}
+    img={img ?? "react.png"}
+    text={text ?? "Reactjs"}
+/>
