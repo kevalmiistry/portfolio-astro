@@ -1,0 +1,100 @@
+---
+import {
+    wasteAidTechStack,
+    talkshawkTechStack,
+    wasteAidDescription,
+    talkshawkDescription,
+} from "../../utils/data"
+import ProjectDescription from "../ProjectDescription"
+import TechStackGroup from "../TechStackGroup.astro"
+import GitHubLogo from "../GitHubLogo.astro"
+import LinkIcon from "../LinkIcon.astro"
+---
+
+<div class="mt-40">
+    <p class="text-2xl font-medium">Personal Projects</p>
+    <div class="w-full border-t mb-6 border-gray-500"></div>
+
+    <div
+        class="border-2 rounded-xl border-[#4d4d4d] bg-[#4d4d4d20] py-2 pb-4 px-3"
+    >
+        <div class="flex items-end justify-between">
+            <h6 class="text-2xl hover:underline font-medium flex-1">
+                <a
+                    href="https://waste-aid.kevalmiistry.me/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex items-center gap-2"
+                >
+                    Waste-Aid
+                    <LinkIcon />
+                </a>
+            </h6>
+            <div class="flex h-[35px] w-full flex-1 items-center justify-end">
+                {
+                    wasteAidTechStack.map((item, idx) => (
+                        <TechStackGroup idx={idx} item={item} />
+                    ))
+                }
+            </div>
+        </div>
+
+        <ProjectDescription description={wasteAidDescription} client:load />
+
+        <div class="overflow-x-auto flex items-center gap-2 mt-4">
+            <a
+                href="https://github.com/kevalmiistry/waste-aid"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <GitHubLogo />
+            </a>
+        </div>
+    </div>
+
+    <div
+        class="border-2 rounded-xl border-[#4d4d4d] bg-[#4d4d4d20] py-2 pb-4 px-3 mt-4"
+    >
+        <div class="flex items-end justify-between">
+            <h6 class="text-2xl hover:underline font-medium flex-1">
+                <a
+                    href="https://talkshawk.kevalmiistry.me"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex items-center gap-2"
+                >
+                    TalkShawk
+                    <LinkIcon />
+                </a>
+            </h6>
+            <div class="flex h-[35px] w-full flex-1 items-center justify-end">
+                {
+                    talkshawkTechStack.map((item, idx) => (
+                        <TechStackGroup idx={idx} item={item} />
+                    ))
+                }
+            </div>
+        </div>
+
+        <ProjectDescription description={talkshawkDescription} client:load />
+
+        <div class="overflow-x-auto flex items-center gap-2 mt-4">
+            <a
+                href="https://github.com/kevalmiistry/TalkShawk_frontend"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Frontend Repository"
+            >
+                <GitHubLogo />
+            </a>
+            <a
+                href="https://github.com/kevalmiistry/talkshawk_backend"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Backend Repository"
+            >
+                <GitHubLogo />
+            </a>
+        </div>
+    </div>
+</div>
