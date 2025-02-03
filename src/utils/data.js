@@ -52,6 +52,10 @@ const talkshawkTechStack = [
         alt: "Reactjs",
     },
     {
+        src: "./logos/redux.png",
+        alt: "Redux",
+    },
+    {
         src: "./logos/sass.png",
         alt: "Sass",
     },
@@ -116,6 +120,10 @@ const technologies = [
     {
         src: "./logos/next.png",
         name: "Nextjs",
+    },
+    {
+        src: "./logos/redux.png",
+        name: "Redux",
     },
     {
         src: "./logos/astro.png",
